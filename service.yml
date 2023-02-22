@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service # Type of the object
 metadata:
-  name: whoami-svc # Name of the service
-  namespace: my-ns # Namespace of the service object
+  name: svc-01 # Name of the service
+  namespace: ns-01 # Namespace of the service object
 spec:
   selector:
-    app: whoami # To monitor containers with the tag
+    app: tag-01 # To monitor containers with the tag
   ports:
     - protocol: TCP # Protocol type
       port: 80 # Service input port
